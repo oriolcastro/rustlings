@@ -7,14 +7,19 @@
 // in the signatures for now. If anything, this is a good way to peek ahead
 // to future exercises!)
 
-// I AM NOT DONE
-
 fn main() {
-    let original_price = 51;
+    let original_price = 50;
     println!("Your sale price is {}", sale_price(original_price));
 }
 
-fn sale_price(price: i32) -> {
+/**
+ * We need to type the return type of the function.
+ *
+ * if a line has no ; at the end will be returned without the need to to return something;
+ *
+ * The function is changing the value of the original_price variable passed to the function
+ */
+fn sale_price(price: i32) -> i32 {
     if is_even(price) {
         price - 10
     } else {
@@ -22,6 +27,9 @@ fn sale_price(price: i32) -> {
     }
 }
 
+/**
+ * The function returns a boolean depending if the result, using % operator, of dividing the passed number by 2 is 0.
+ */
 fn is_even(num: i32) -> bool {
     num % 2 == 0
 }
