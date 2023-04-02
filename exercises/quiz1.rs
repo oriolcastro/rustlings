@@ -10,11 +10,21 @@
 // Write a function that calculates the price of an order of apples given
 // the quantity bought. No hints this time!
 
-// I AM NOT DONE
-
+/**
+ * In Rust variables are writen in snake case.
+ */
 // Put your function here!
-// fn calculate_price_of_apples {
+fn calculate_price_of_apples(count: i32) -> i32 {
+    let price = 2;
+    let discounted_price = 1;
+    let discounted_min_amount = 40;
 
+    if count > discounted_min_amount {
+        count * discounted_price
+    } else {
+        count * price
+    }
+}
 // Don't modify this function!
 #[test]
 fn verify_test() {
